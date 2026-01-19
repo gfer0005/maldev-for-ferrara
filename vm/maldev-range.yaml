@@ -1,0 +1,28 @@
+ludus:
+  # Machine de développement - Windows 10/11 avec outils
+  - vlan: 20
+    ip_last_octet: 50
+    ram_gb: 4
+    cpus: 2
+    template: windows-10-22h2-x64-enterprise-template
+    windows: true
+    testing:
+      snapshot: false
+      block_internet: false
+    vm_name: "maldev-dev-50"
+    hostname: "maldev-dev"
+    ansible_groups: [windows_dev]
+
+  # Machine cible - Windows 10/11 vierge pour tester
+  - vlan: 20
+    ip_last_octet: 51
+    ram_gb: 2
+    cpus: 1
+    template: windows-10-22h2-x64-enterprise-template
+    windows: true
+    testing:
+      snapshot: false
+      block_internet: false
+    vm_name: "maldev-target-51"
+    hostname: "maldev-target"
+    ansible_groups: [windows_target]
