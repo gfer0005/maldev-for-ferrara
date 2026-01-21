@@ -297,20 +297,6 @@ Get-MpComputerStatus | Select-Object RealTimeProtectionEnabled, AntivirusEnabled
 
 ---
 
-## ✅ Validation de l'exercice
-
-Vous avez réussi si :
-
-- [ ] Les VMs sont déployées et accessibles via Remote Desktop
-- [ ] WSL2 et Ubuntu sont installés et fonctionnels
-- [ ] Nim et les outils de compilation sont opérationnels
-- [ ] Le shellcode a été généré avec msfvenom
-- [ ] Le loader compile sans erreur
-- [ ] Le loader s'exécute et affiche la MessageBox
-- [ ] Windows Defender est correctement configuré pour ne pas bloquer vos tests
-
----
-
 ## 🔧 Dépannage
 
 ### Erreur de compilation Nim
@@ -334,23 +320,3 @@ wsl --install Ubuntu
 ```
 
 ---
-
-## 📚 Ressources supplémentaires
-
-- [Documentation Nim](https://nim-lang.org/docs/)
-- [Winim GitHub](https://github.com/khchen/winim)
-- [Metasploit Documentation](https://docs.metasploit.com/)
-- [Windows API Reference](https://docs.microsoft.com/en-us/windows/win32/api/)
-
----
-
-## 🎓 Prochaines étapes
-
-Une fois cet exercice complété, vous êtes prêt pour :
-- Exercice 2 : Techniques d'évasion AV de base
-- Exercice 3 : Injection de processus
-- Exercice 4 : Obfuscation et encryption du shellcode
-
----
-
-**Bon développement ! 🚀**
