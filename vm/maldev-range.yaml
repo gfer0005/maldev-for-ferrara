@@ -15,8 +15,8 @@ ludus:
 
   - vlan: 20
     ip_last_octet: 51
-    ram_gb: 2
-    cpus: 1
+    ram_gb: 4
+    cpus: 2
     template: win10-22h2-x64-enterprise-template
     windows: {}
     testing:
